@@ -18,6 +18,7 @@ demo = gr.Interface(fn=predict,
              inputs=gr.inputs.Image(type="pil"),
              outputs=gr.outputs.Label(num_top_classes=3),
              examples=[["dog.jpg"]],
+             share=True,
              )
              
 demo.launch()
