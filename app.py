@@ -6,7 +6,7 @@ from torchvision import transforms
 model = torch.hub.load('pytorch/vision:v0.6.0', 'resnet18', pretrained=True).eval()
 response = requests.get("https://git.io/JJkYN")
 labels = response.text.split("\n")
-
+#zheshizhushi
 def predict(inp):
   inp = transforms.ToTensor()(inp).unsqueeze(0)
   with torch.no_grad():
